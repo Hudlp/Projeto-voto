@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(71, 78, 74);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container {
+  background-color: #feedcf;
+  width: 500px;
+  height: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.267);
+}
+
+.img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 500px;
+  height: 500px;
+  background-image: url(image/ilustracao-plana-das-eleicoes-do-brasil_23-2149885319.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid #37447c;
+  margin-bottom: 60px;
+}
+
+.txt {
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.txt > h1 {
+  font-size: 24px;
+  color: #37447c;
+  margin-bottom: 14px;
+}
+
+.txt > p {
+  margin-bottom: 16px;
+  color: #78797a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.txtbox {
+  width: 80px;
+  text-align: center;
+  color: #37447c;
+  font-weight: 600;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  border: 1px solid #37447c;
+}
+
+.button {
+  padding: 6px;
+  background-color: #039f2c;
+  border-radius: 6px;
+  border: none;
+  margin-left: 4px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.267);
+}
+
+.button:hover {
+  background-color: #53be70;
+  cursor: pointer;
+}
+
+.resultado {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.resultado {
+  color: #37447c;
+}
