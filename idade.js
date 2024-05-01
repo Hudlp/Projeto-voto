@@ -1,39 +1,38 @@
 // addeventlistener usar para quando não utilizar o onclick no html
 
-var botao = document.querySelector('input[value="Confirmar"]')
-botao.addEventListener("click", (event) => {
+var button = document.querySelector('input[value="Confirmar"]')
+button.addEventListener("click", (event) => {
   checkUserAgeAndSetMessage(event)
 })
 
 function checkUserAgeAndSetMessage(e) {
   e.preventDefault()
-  var rIdade = document.querySelector("input#txtidade")
-  var resIdade = document.querySelector("div#resultado")
-  console.log(resIdade)
-  var idade = String(rIdade.value)
+  const userAgeInput = document.querySelector("input#txtidade")
+  const resultContainer = document.querySelector("div#resultado")
+  const age = String(userAgeInput.value)
 
-  if (idade == "") {
-    resIdade.innerHTML = "<strong>Digite sua idade</strong>"
-    resIdade.style.color = "red"
-    rIdade.style.border = "solid 1px red"
+  if (age == "") {
+    resultContainer.innerHTML = "<strong>Digite sua idade</strong>"
+    resultContainer.style.color = "red"
+    userAgeInput.style.border = "solid 1px red"
     return
   }
 
-  if (idade < 16) {
-    resIdade.innerHTML = "<strong>Não precisa votar</strong>"
-    resIdade.style.color = "#37447c"
-    rIdade.style.border = "solid 1px #37447c"
+  if (age < 16) {
+    resultContainer.innerHTML = "<strong>Não precisa votar</strong>"
+    resultContainer.style.color = "#37447c"
+    userAgeInput.style.border = "solid 1px #37447c"
     return
   }
 
-  if (idade < 18 || idade >= 65) {
-    resIdade.innerHTML = "<strong>Voto opcional</strong>"
-    resIdade.style.color = "#37447c"
-    rIdade.style.border = "solid 1px #37447c"
+  if (age < 18 || age >= 65) {
+    resultContainer.innerHTML = "<strong>Voto opcional</strong>"
+    resultContainer.style.color = "#37447c"
+    userAgeInput.style.border = "solid 1px #37447c"
     return
   }
 
-  resIdade.innerHTML = "<strong>Voto obrigatório</strong>"
-  resIdade.style.color = "#37447c"
-  rIdade.style.border = "solid 1px #37447c"
+  resultContainer.innerHTML = "<strong>Voto obrigatório</strong>"
+  resultContainer.style.color = "#37447c"
+  userAgeInput.style.border = "solid 1px #37447c"
 }
