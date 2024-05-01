@@ -14,24 +14,21 @@ function votacao(e) {
 
   if (idade == "") {
     resIdade.innerHTML = "<strong>Digite sua idade</strong>"
-    document.querySelector("div#resultado").style.color = "red"
-    document.querySelector("input#txtidade").style.border = "solid 1px red"
+    resIdade.style.color = "red"
+    rIdade.style.border = "solid 1px red"
   } else {
     if (idade < 16) {
       resIdade.innerHTML = "<strong>Não precisa votar</strong>"
-      document.querySelector("div#resultado").style.color = "#37447c"
-      document.querySelector("input#txtidade").style.border =
-        "solid 1px #37447c"
+      resIdade.style.color = "#37447c"
+      rIdade.style.border = "solid 1px #37447c"
     } else if (idade < 18 || idade >= 65) {
       resIdade.innerHTML = "<strong>Voto opcional</strong>"
-      document.querySelector("div#resultado").style.color = "#37447c"
-      document.querySelector("input#txtidade").style.border =
-        "solid 1px #37447c"
+      resIdade.style.color = "#37447c"
+      rIdade.style.border = "solid 1px #37447c"
     } else {
       resIdade.innerHTML = "<strong>Voto obrigatório</strong>"
-      document.querySelector("div#resultado").style.color = "#37447c"
-      document.querySelector("input#txtidade").style.border =
-        "solid 1px #37447c"
+      resIdade.style.color = "#37447c"
+      rIdade.style.border = "solid 1px #37447c"
     }
   }
 }
